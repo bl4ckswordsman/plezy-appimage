@@ -1,0 +1,7 @@
+# AppImage build artifacts – never commit these
+*.AppImage
+*.AppImage.zsync
+AppDir-*/
+upstream/
+release-assets.txt
+/tmp/
