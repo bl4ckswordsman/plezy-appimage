@@ -4,12 +4,14 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "description": "Auto-merge GitHub Actions digest pin updates (patch/minor)",
-      "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["digest", "patch", "minor"],
+      "description": "Group all updates into a single PR and auto-merge",
+      "matchPackageNames": ["*"],
+      "groupName": "all dependencies",
+      "groupSlug": "all",
       "automerge": true,
       "automergeType": "pr",
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "ignoreTests": true
     }
   ]
 }
