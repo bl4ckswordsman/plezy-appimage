@@ -17,8 +17,6 @@ Flutterで構築された最新のクロスプラットフォームPlex & Jellyf
 > [!NOTE]
 > **Android版をお探しですか？** F-DroidおよびObtainium向けのリリースは [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks) をご確認ください。
 
----
-
 ## ダウンロード
 
 [Releases ページ](https://github.com/bl4ckswordsman/plezy-appimage/releases/latest) からご使用のアーキテクチャに合わせたファイルをダウンロードしてください：
@@ -29,16 +27,9 @@ Flutterで構築された最新のクロスプラットフォームPlex & Jellyf
 | `Plezy-<バージョン>-aarch64.AppImage` | ARMデバイス（Raspberry Pi 5、Pinebook Proなど） |
 | `*.AppImage.zsync` | AppImageUpdate / Gear Leverによる差分更新用メタデータ |
 
----
-
 ## AppImageマネージャーとデスクトップ統合
 
-メニュー追加や差分更新の自動化にはAppImageマネージャーの利用をおすすめします：
-
-- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
-- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
-- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (デスクトップ統合)
-- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
+メニュー追加や差分更新の自動化にはAppImageマネージャーの利用をおすすめします：[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (GUI / Flathub)、[AppManager](https://github.com/kem-a/AppManager) (GUI)、[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)、[Zap](https://github.com/srevinsaju/zap) (CLI)。
 
 <details>
 <summary>手動実行（マネージャーなし）</summary>
@@ -50,9 +41,8 @@ chmod +x Plezy-*-x86_64.AppImage
 
 </details>
 
----
-
-## FUSEの要件
+<details>
+<summary>FUSEの要件とトラブルシューティング</summary>
 
 AppImageは実行時に内包されたファイルシステムをマウントするためFUSE（Filesystem in Userspace）を使用します。
 
@@ -68,14 +58,11 @@ AppImageは実行時に内包されたファイルシステムをマウントす
 ./Plezy-VERSION-x86_64.AppImage --appimage-extract-and-run
 ```
 
----
+</details>
 
 ## 上流プロジェクト
 
 - **公式上流リポジトリ:** [edde746/plezy](https://github.com/edde746/plezy)
-- **Android向けパッケージ:** [bl4ckswordsman/plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)
-
----
 
 ## ライセンス
 

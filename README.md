@@ -17,8 +17,6 @@ Releases are built automatically from upstream [edde746/plezy](https://github.co
 > [!NOTE]
 > **Looking for Android?** Check out [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks) for F-Droid and Obtainium releases.
 
----
-
 ## Download
 
 Go to the [Releases page](https://github.com/bl4ckswordsman/plezy-appimage/releases/latest) and grab the file for your architecture:
@@ -29,16 +27,9 @@ Go to the [Releases page](https://github.com/bl4ckswordsman/plezy-appimage/relea
 | `Plezy-<version>-aarch64.AppImage` | ARM systems (Raspberry Pi 5, Pinebook Pro, etc.) |
 | `*.AppImage.zsync` | Delta updates via AppImageUpdate / Gear Lever |
 
----
-
 ## AppImage Managers & Integration
 
-For automatic desktop integration (app menu, icon) and delta updates, an AppImage manager is recommended:
-
-- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
-- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
-- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (Desktop integration)
-- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
+For automatic desktop integration (app menu, icon) and delta updates, an AppImage manager is recommended: [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (GUI / Flathub), [AppManager](https://github.com/kem-a/AppManager) (GUI), [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher), or [Zap](https://github.com/srevinsaju/zap) (CLI).
 
 <details>
 <summary>Manual execution (no manager)</summary>
@@ -50,9 +41,8 @@ chmod +x Plezy-*-x86_64.AppImage
 
 </details>
 
----
-
-## FUSE requirement
+<details>
+<summary>FUSE requirement & troubleshooting</summary>
 
 AppImages use FUSE (Filesystem in Userspace) to mount their embedded filesystem at runtime.
 
@@ -68,14 +58,11 @@ AppImages use FUSE (Filesystem in Userspace) to mount their embedded filesystem 
 ./Plezy-VERSION-x86_64.AppImage --appimage-extract-and-run
 ```
 
----
+</details>
 
 ## Upstream project
 
 - **Canonical upstream:** [edde746/plezy](https://github.com/edde746/plezy)
-- **Android packages:** [bl4ckswordsman/plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)
-
----
 
 ## License
 

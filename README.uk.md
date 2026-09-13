@@ -17,8 +17,6 @@
 > [!NOTE]
 > **Шукаєте версію для Android?** Перегляньте [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks) з релізами для F-Droid та Obtainium.
 
----
-
 ## Завантаження
 
 Перейдіть на [сторінку релізів](https://github.com/bl4ckswordsman/plezy-appimage/releases/latest) та завантажте файл для вашої архітектури:
@@ -29,16 +27,9 @@
 | `Plezy-<версія>-aarch64.AppImage` | ARM-пристрої (Raspberry Pi 5, Pinebook Pro тощо) |
 | `*.AppImage.zsync` | Дельта-оновлення через AppImageUpdate / Gear Lever |
 
----
-
 ## Менеджери AppImage та інтеграція
 
-Для інтеграції в системне меню та дельта-оновлень рекомендується використовувати менеджер AppImage:
-
-- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
-- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
-- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (системна інтеграція)
-- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
+Для інтеграції в системне меню та дельта-оновлень рекомендується використовувати менеджер AppImage: [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (GUI / Flathub), [AppManager](https://github.com/kem-a/AppManager) (GUI), [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) або [Zap](https://github.com/srevinsaju/zap) (CLI).
 
 <details>
 <summary>Ручний запуск (без менеджера)</summary>
@@ -50,9 +41,8 @@ chmod +x Plezy-*-x86_64.AppImage
 
 </details>
 
----
-
-## Вимоги FUSE
+<details>
+<summary>Вимоги FUSE та усунення несправностей</summary>
 
 AppImage використовує FUSE (файлову систему в просторі користувача) для монтування образу під час запуску.
 
@@ -68,14 +58,11 @@ AppImage використовує FUSE (файлову систему в про�
 ./Plezy-VERSION-x86_64.AppImage --appimage-extract-and-run
 ```
 
----
+</details>
 
 ## Апстрім-проєкт
 
 - **Офіційний апстрім:** [edde746/plezy](https://github.com/edde746/plezy)
-- **Пакети для Android:** [bl4ckswordsman/plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)
-
----
 
 ## Ліцензія
 

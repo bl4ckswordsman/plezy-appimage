@@ -17,8 +17,6 @@
 > [!NOTE]
 > **寻找 Android 版本？** 请查看 [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)，提供 F-Droid 和 Obtainium 安装包。
 
----
-
 ## 下载
 
 前往 [Releases 页面](https://github.com/bl4ckswordsman/plezy-appimage/releases/latest) 并下载适合你架构的文件：
@@ -29,16 +27,9 @@
 | `Plezy-<版本>-aarch64.AppImage` | ARM 设备（树莓派5、Pinebook Pro 等） |
 | `*.AppImage.zsync` | 通过 AppImageUpdate / Gear Lever 进行增量更新 |
 
----
-
 ## AppImage 管理器与桌面集成
 
-推荐使用 AppImage 管理器实现桌面菜单集成与自动更新：
-
-- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)**（GUI / Flathub）
-- **[AppManager](https://github.com/kem-a/AppManager)**（GUI）
-- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)**（桌面集成工具）
-- **[Zap](https://github.com/srevinsaju/zap)**（CLI 命令行工具）
+推荐使用 AppImage 管理器实现桌面菜单集成与自动更新：[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)（GUI / Flathub）、[AppManager](https://github.com/kem-a/AppManager)（GUI）、[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) 或 [Zap](https://github.com/srevinsaju/zap)（CLI 命令行工具）。
 
 <details>
 <summary>手动运行（不使用管理器）</summary>
@@ -50,9 +41,8 @@ chmod +x Plezy-*-x86_64.AppImage
 
 </details>
 
----
-
-## FUSE 依赖
+<details>
+<summary>FUSE 依赖与故障排除</summary>
 
 AppImage 使用 FUSE（用户空间文件系统）在运行时挂载其内置文件系统。
 
@@ -68,14 +58,11 @@ AppImage 使用 FUSE（用户空间文件系统）在运行时挂载其内置文
 ./Plezy-VERSION-x86_64.AppImage --appimage-extract-and-run
 ```
 
----
+</details>
 
 ## 上游项目
 
 - **官方上游：** [edde746/plezy](https://github.com/edde746/plezy)
-- **Android 安装包：** [bl4ckswordsman/plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)
-
----
 
 ## 许可证
 

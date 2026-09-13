@@ -17,8 +17,6 @@
 > [!NOTE]
 > **Ищете версию для Android?** Ознакомьтесь с [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks) с релизами для F-Droid и Obtainium.
 
----
-
 ## Скачать
 
 Перейдите на [страницу релизов](https://github.com/bl4ckswordsman/plezy-appimage/releases/latest) и выберите файл для вашей архитектуры:
@@ -29,16 +27,9 @@
 | `Plezy-<версия>-aarch64.AppImage` | ARM-устройства (Raspberry Pi 5, Pinebook Pro и т. д.) |
 | `*.AppImage.zsync` | Дельта-обновления через AppImageUpdate / Gear Lever |
 
----
-
 ## Менеджеры AppImage и интеграция
 
-Для интеграции в меню приложений и дельта-обновлений рекомендуется использовать менеджер AppImage:
-
-- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
-- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
-- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (системная интеграция)
-- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
+Для интеграции в меню приложений и дельта-обновлений рекомендуется использовать менеджер AppImage: [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (GUI / Flathub), [AppManager](https://github.com/kem-a/AppManager) (GUI), [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) или [Zap](https://github.com/srevinsaju/zap) (CLI).
 
 <details>
 <summary>Ручной запуск (без менеджера)</summary>
@@ -50,9 +41,8 @@ chmod +x Plezy-*-x86_64.AppImage
 
 </details>
 
----
-
-## Требования FUSE
+<details>
+<summary>Требования FUSE и устранение неполадок</summary>
 
 AppImage использует FUSE (файловую систему в пользовательском пространстве) для монтирования образа во время работы.
 
@@ -68,14 +58,11 @@ AppImage использует FUSE (файловую систему в поль�
 ./Plezy-VERSION-x86_64.AppImage --appimage-extract-and-run
 ```
 
----
+</details>
 
 ## Апстрим-проект
 
 - **Официальный апстрим:** [edde746/plezy](https://github.com/edde746/plezy)
-- **Пакеты для Android:** [bl4ckswordsman/plezy-apks](https://github.com/bl4ckswordsman/plezy-apks)
-
----
 
 ## Лицензия
 
