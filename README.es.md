@@ -2,9 +2,11 @@
 
 [🇬🇧 English](README.md) &nbsp;|
 [简体中文](README.zh-CN.md) &nbsp;|
+[Русский](README.ru.md) &nbsp;|
+[Українська](README.uk.md) &nbsp;|
+[日本語](README.ja.md) &nbsp;|
 **Español** &nbsp;|
-[हिन्दी](README.hi.md) &nbsp;|
-[عربي](README.ar.md)
+[Português](README.pt-BR.md)
 
 [![Compilar y publicar AppImage](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
@@ -29,24 +31,21 @@ Ve a la [página de Releases](https://github.com/bl4ckswordsman/plezy-appimage/r
 
 ---
 
-## Instalar con Gear Lever
+## Gestores de AppImage e integración
 
-[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) es un gestor gráfico de AppImage para GNOME que gestiona la integración en el escritorio y las actualizaciones delta.
+Para integración en el menú del sistema y actualizaciones delta, se recomienda un gestor de AppImage:
 
-[![Instalar desde Flathub](https://flathub.org/api/badge?locale=es)](https://flathub.org/apps/it.mijorus.gearlever)
+- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
+- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
+- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (integración en el escritorio)
+- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
 
 <details>
-<summary>Pasos manuales sin Gear Lever</summary>
+<summary>Ejecución manual (sin gestor)</summary>
 
 ```bash
-# 1. Descargar el AppImage (sustituye VERSION por la etiqueta, p. ej. 2.19.1)
-wget https://github.com/bl4ckswordsman/plezy-appimage/releases/download/VERSION/Plezy-VERSION-x86_64.AppImage
-
-# 2. Hacerlo ejecutable
-chmod +x Plezy-VERSION-x86_64.AppImage
-
-# 3. Ejecutarlo
-./Plezy-VERSION-x86_64.AppImage
+chmod +x Plezy-*-x86_64.AppImage
+./Plezy-*-x86_64.AppImage
 ```
 
 </details>

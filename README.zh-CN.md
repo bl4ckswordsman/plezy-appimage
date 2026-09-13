@@ -2,9 +2,11 @@
 
 [🇬🇧 English](README.md) &nbsp;|
 **简体中文** &nbsp;|
+[Русский](README.ru.md) &nbsp;|
+[Українська](README.uk.md) &nbsp;|
+[日本語](README.ja.md) &nbsp;|
 [Español](README.es.md) &nbsp;|
-[हिन्दी](README.hi.md) &nbsp;|
-[عربي](README.ar.md)
+[Português](README.pt-BR.md)
 
 [![构建与发布 AppImage](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
@@ -29,24 +31,21 @@
 
 ---
 
-## 通过 Gear Lever 安装
+## AppImage 管理器与桌面集成
 
-[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) 是适用于 GNOME 的图形化 AppImage 管理器，可处理桌面集成（桌面条目、图标、系统菜单）和增量更新。
+推荐使用 AppImage 管理器实现桌面菜单集成与自动更新：
 
-[![从 Flathub 安装](https://flathub.org/api/badge?locale=zh-CN)](https://flathub.org/apps/it.mijorus.gearlever)
+- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)**（GUI / Flathub）
+- **[AppManager](https://github.com/kem-a/AppManager)**（GUI）
+- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)**（桌面集成工具）
+- **[Zap](https://github.com/srevinsaju/zap)**（CLI 命令行工具）
 
 <details>
-<summary>不使用 Gear Lever 的手动步骤</summary>
+<summary>手动运行（不使用管理器）</summary>
 
 ```bash
-# 1. 下载 AppImage（将 VERSION 替换为版本号，如 2.19.1）
-wget https://github.com/bl4ckswordsman/plezy-appimage/releases/download/VERSION/Plezy-VERSION-x86_64.AppImage
-
-# 2. 赋予执行权限
-chmod +x Plezy-VERSION-x86_64.AppImage
-
-# 3. 运行
-./Plezy-VERSION-x86_64.AppImage
+chmod +x Plezy-*-x86_64.AppImage
+./Plezy-*-x86_64.AppImage
 ```
 
 </details>

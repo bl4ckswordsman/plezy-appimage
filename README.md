@@ -2,9 +2,11 @@
 
 **🇬🇧 English** &nbsp;|
 [简体中文](README.zh-CN.md) &nbsp;|
+[Русский](README.ru.md) &nbsp;|
+[Українська](README.uk.md) &nbsp;|
+[日本語](README.ja.md) &nbsp;|
 [Español](README.es.md) &nbsp;|
-[हिन्दी](README.hi.md) &nbsp;|
-[عربي](README.ar.md)
+[Português](README.pt-BR.md)
 
 [![Build & Publish AppImage](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
@@ -29,24 +31,21 @@ Go to the [Releases page](https://github.com/bl4ckswordsman/plezy-appimage/relea
 
 ---
 
-## Install via Gear Lever
+## AppImage Managers & Integration
 
-[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) is a GUI AppImage manager for GNOME that handles desktop integration and delta updates.
+For automatic desktop integration (app menu, icon) and delta updates, an AppImage manager is recommended:
 
-[![Install from Flathub](https://flathub.org/api/badge?locale=en)](https://flathub.org/apps/it.mijorus.gearlever)
+- **[Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)** (GUI / Flathub)
+- **[AppManager](https://github.com/kem-a/AppManager)** (GUI)
+- **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)** (Desktop integration)
+- **[Zap](https://github.com/srevinsaju/zap)** (CLI)
 
 <details>
-<summary>Manual steps without Gear Lever</summary>
+<summary>Manual execution (no manager)</summary>
 
 ```bash
-# 1. Download the AppImage (replace VERSION with the release tag, e.g. 2.19.1)
-wget https://github.com/bl4ckswordsman/plezy-appimage/releases/download/VERSION/Plezy-VERSION-x86_64.AppImage
-
-# 2. Make it executable
-chmod +x Plezy-VERSION-x86_64.AppImage
-
-# 3. Run it
-./Plezy-VERSION-x86_64.AppImage
+chmod +x Plezy-*-x86_64.AppImage
+./Plezy-*-x86_64.AppImage
 ```
 
 </details>
