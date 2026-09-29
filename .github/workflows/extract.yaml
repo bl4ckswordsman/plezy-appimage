@@ -76,10 +76,12 @@ jobs:
       - name: Download appimagetool
         if: steps.check.outputs.exists == 'false'
         id: appimagetool
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
-          TOOL_JSON=$(curl -fsSL https://api.github.com/repos/AppImage/appimagetool/releases/latest)
+          TOOL_JSON=$(curl -fsSL -H "Authorization: Bearer ${GH_TOKEN}" https://api.github.com/repos/AppImage/appimagetool/releases/latest)
           TOOL_VERSION=$(echo "$TOOL_JSON" | jq -r '.tag_name')
 
           # Fetch the x86_64 binary (the runner is always x86_64; we'll set
