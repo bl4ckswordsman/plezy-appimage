@@ -14,7 +14,7 @@ Distro-agnostic AppImage packages for [Plezy](https://github.com/edde746/plezy) 
 
 Releases are built automatically from upstream [edde746/plezy](https://github.com/edde746/plezy) releases and published here as self-contained AppImages. No root, no package manager, no distro-specific dependencies.
 
-> [!NOTE]
+> [!TIP]
 > **Looking for Android?** Check out [plezy-apks](https://github.com/bl4ckswordsman/plezy-apks) for F-Droid and Obtainium releases.
 
 ## Download
