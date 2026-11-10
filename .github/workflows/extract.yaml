@@ -1,9 +1,6 @@
 name: Build & Publish AppImage
 
 on:
-  schedule:
-    # Run every hour at :37 (staggered – avoids the thundering herd at xx:00)
-    - cron: "37 * * * *"
   workflow_dispatch:
 
 permissions:

@@ -8,6 +8,11 @@
 [Español](README.es.md) &nbsp;|
 [Português](README.pt-BR.md)
 
+> [!WARNING]
+> **非推奨 / 公式サポート追加:** バージョン [v2.26.0](https://github.com/edde746/plezy/releases/tag/2.26.0) より、公式の [edde746/plezy](https://github.com/edde746/plezy) プロジェクトが `x86_64` および `aarch64` 向けの公式Linux AppImage（`zsync` 差分アップデート対応）を直接提供するようになりました。
+>
+> 今後は公式の **[Plezy Releases](https://github.com/edde746/plezy/releases)** ページから直接ダウンロードしてください。本リポジトリはメンテナンスを終了しています。
+
 [![AppImageのビルドと公開](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
 Flutterで構築された最新のクロスプラットフォームPlex & Jellyfinクライアント「[Plezy](https://github.com/edde746/plezy)」向けのディストリビューション非依存AppImageパッケージです。

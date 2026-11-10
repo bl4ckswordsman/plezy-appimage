@@ -8,6 +8,11 @@
 [Español](README.es.md) &nbsp;|
 [Português](README.pt-BR.md)
 
+> [!WARNING]
+> **已弃用 / 上游已提供官方支持：** 自 [v2.26.0](https://github.com/edde746/plezy/releases/tag/2.26.0) 起，官方项目 [edde746/plezy](https://github.com/edde746/plezy) 已在发布中原生提供适用于 `x86_64` 和 `aarch64` 的 Linux AppImage（支持 `zsync` 增量更新）。
+>
+> 请直接前往 **[Plezy Releases](https://github.com/edde746/plezy/releases)** 页面下载官方包。本仓库已不再维护。
+
 [![构建与发布 AppImage](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
 适用于 [Plezy](https://github.com/edde746/plezy) 的发行版无关 AppImage 软件包 —— 一款基于 Flutter 构建的现代跨平台 Plex & Jellyfin 客户端。

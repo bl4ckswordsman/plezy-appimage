@@ -8,6 +8,11 @@
 [Español](README.es.md) &nbsp;|
 [Português](README.pt-BR.md)
 
+> [!WARNING]
+> **Застаріло / Додано офіційну підтримку:** Починаючи з версії [v2.26.0](https://github.com/edde746/plezy/releases/tag/2.26.0), офіційний проєкт [edde746/plezy](https://github.com/edde746/plezy) самостійно збирає та публікує AppImage для Linux (з дельта-оновленнями `zsync`) для `x86_64` та `aarch64`.
+>
+> Будь ласка, завантажуйте офіційні пакунки зі сторінки **[Plezy Releases](https://github.com/edde746/plezy/releases)**. Цей репозиторій більше не підтримується.
+
 [![Збірка та публікація AppImage](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml/badge.svg)](https://github.com/bl4ckswordsman/plezy-appimage/actions/workflows/extract.yaml)
 
 Дистрибутиво-незалежні пакети AppImage для [Plezy](https://github.com/edde746/plezy) — сучасного кросплатформового клієнта Plex і Jellyfin на базі Flutter.
